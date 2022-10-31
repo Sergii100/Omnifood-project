@@ -30,8 +30,10 @@ Paragraph default: 1.6
 - Shades(lighter versions): #cf711f
 - Accents:
 - Greys:
+#888
 #555
 #333
+#ddd
 
 ---03 SHADOWS
 
@@ -56,6 +58,7 @@ Default: 9px
   --darker-primary: #cf711f;
   --main-grey: #555;
   --darker-grey: #333;
+  --medium-grey: #888;
   --light-grey: #ddd;
   --header-background: #fdf2e9;
   --light-background: #fae5d3;
@@ -157,7 +160,7 @@ GENERAL REUSABLE COMPONENTS
 .btn--full:link,
 .btn--full:visited {
   background-color: var(--primary-color);
-  color: white;
+  color: #fff;
 }
 
 .btn--full:hover,
