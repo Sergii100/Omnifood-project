@@ -1,3 +1,22 @@
+:root {
+  --primary-color: #e67e22;
+  --darker-primary: #cf711f;
+  --main-grey: #555;
+  --darker-grey: #333;
+  --medium-grey: #888;
+  --light-grey: #ddd;
+  --header-background: #fdf2e9;
+  --light-background: #fae5d3;
+  --tag-background: #51cf66;
+  --tag-background-2: #94d82d;
+  --tag-background-3: #ffd43b;
+
+  /* font-size: 10px; */
+  /* 10px / 16px(default) =0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
 /* .................
 HEADER
 .................... */
@@ -205,4 +224,82 @@ HOW IT WORKS SECTION
 .step-img {
   width: 35%;
   /* z-index: 10; */
+}
+
+/* .................
+MEALS AND DIETS SECTION
+.................... */
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--darker-grey);
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag--vegetarian {
+  background-color: var(--tag-background);
+}
+
+.tag--vegan {
+  background-color: var(--tag-background-2);
+}
+
+.tag--paleo {
+  background-color: var(--tag-background-3);
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--darker-grey);
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icons {
+  height: 2.4rem;
+  width: 2.4rem;
+  fill: var(--primary-color);
+}
+
+.meal-img {
+  width: 100%;
 }
