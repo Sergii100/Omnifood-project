@@ -25,9 +25,11 @@ Paragraph default: 1.6
 
 - Primary: #e67e22
 - Tints(darker versions): #fdf2e9
-
 #fae5d3
+#eb984e
+
 - Shades(lighter versions): #cf711f
+#45260a
 - Accents:
 - Greys:
 #888
@@ -36,7 +38,10 @@ Paragraph default: 1.6
 #ddd
 #6f6f6f (lightest grey allow on #fdf2e9)
 
+
 ---03 SHADOWS
+ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
 
 ---04 BORDER_RADIUS
 Default: 9px
@@ -58,6 +63,7 @@ Medium: 11px
 :root {
   --primary-color: #e67e22;
   --darker-primary: #cf711f;
+  --darkest-primary: #45260a;
   --main-grey: #555;
   --darker-grey: #333;
   --medium-grey: #888;
@@ -158,6 +164,7 @@ GENERAL REUSABLE COMPONENTS
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -169,6 +176,11 @@ GENERAL REUSABLE COMPONENTS
   border-radius: 9px;
   /* Always put transition on original state(main button) */
   transition: all 0.3s;
+
+  /* only necessary for .btn  */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -196,6 +208,18 @@ GENERAL REUSABLE COMPONENTS
 
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: var(--darkest-primary);
+  color: var(--header-background);
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: var(--main-grey);
 }
 
 .link:link,
@@ -231,6 +255,14 @@ GENERAL REUSABLE COMPONENTS
   width: 3rem;
   height: 3rem;
   fill: var(--primary-color);
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted var(--primary-color);
+  outline-offset: 8px; */
+
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER CLASSES */
