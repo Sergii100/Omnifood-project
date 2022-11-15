@@ -15,6 +15,7 @@ Default: 400
 Default: 1
 Small: 1.05
 Medium: 1.2
+large: 1.8
 Paragraph default: 1.6
 
 - Letter spacing:
@@ -86,6 +87,7 @@ body {
   font-weight: 400;
   color: var(--main-grey);
   line-height: 1;
+  overflow-x: hidden;
 }
 
 /*..................
@@ -254,6 +256,7 @@ GENERAL REUSABLE COMPONENTS
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
