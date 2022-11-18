@@ -86,15 +86,12 @@ Medium: 11px
   /* scroll-behavior: smooth; */
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--main-grey);
   line-height: 1;
+  overflow-x: hidden;
 }
 
 /*..................
