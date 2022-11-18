@@ -80,6 +80,10 @@ Medium: 11px
   /* 10px / 16px(default) =0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* does NOT work on Safari */
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -87,7 +91,6 @@ body {
   font-weight: 400;
   color: var(--main-grey);
   line-height: 1;
-  overflow-x: hidden;
 }
 
 /*..................
